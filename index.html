@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hampton's Yacht - Luxury on the High Seas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="ocean-background">
+        <div class="waves"></div>
+        <div class="waves"></div>
+        <div class="waves"></div>
+    </div>
+
+    <header>
+        <nav>
+            <div class="logo">⚓ Hampton's Yacht</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="boat-container">
+                <div class="yacht">
+                    <div class="yacht-hull"></div>
+                    <div class="yacht-deck"></div>
+                    <div class="yacht-mast"></div>
+                    <div class="yacht-sail"></div>
+                    <div class="hampton">
+                        <div class="egg-head"></div>
+                        <div class="body"></div>
+                        <div class="arm arm-left"></div>
+                        <div class="arm arm-right"></div>
+                    </div>
+                </div>
+            </div>
+            <h1 class="hero-title">Welcome Aboard</h1>
+            <p class="hero-subtitle">Experience luxury sailing with Hampton and his magnificent yacht</p>
+            <button class="cta-button" onclick="sailAway()">Set Sail</button>
+        </section>
+
+        <section id="about" class="about">
+            <h2>Meet Hampton</h2>
+            <div class="about-content">
+                <div class="hampton-portrait">
+                    <div class="portrait-egg"></div>
+                    <div class="portrait-body"></div>
+                </div>
+                <p>Hampton is a distinguished gentleman with an egg for a head, who has dedicated his life to the art of luxury sailing. His yacht represents the pinnacle of maritime elegance, combining classic design with modern amenities.</p>
+            </div>
+        </section>
+
+        <section id="features" class="features">
+            <h2>Yacht Features</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🌊</div>
+                    <h3>Ocean-Ready</h3>
+                    <p>Built to navigate the most challenging waters with grace and style.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">✨</div>
+                    <h3>Luxury Interior</h3>
+                    <p>Premium finishes and elegant design throughout every cabin.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🍳</div>
+                    <h3>Egg-Friendly</h3>
+                    <p>Specially designed accommodations for Hampton's unique needs.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚓</div>
+                    <h3>Premium Anchorage</h3>
+                    <p>State-of-the-art navigation and anchoring systems.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Book Your Voyage</h2>
+            <form class="contact-form" onsubmit="handleSubmit(event)">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Message Hampton..." rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Hampton's Yacht. All rights reserved. ⚓</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
