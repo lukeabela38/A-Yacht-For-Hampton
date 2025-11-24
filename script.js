@@ -1,3 +1,53 @@
+// Sign-up Counter - Continuously Incrementing
+let signupCount = 12847; // Starting number
+let incrementInterval;
+
+function formatNumber(num) {
+    return num.toLocaleString('en-US');
+}
+
+function incrementSignupCounter() {
+    const counterElement = document.getElementById('signupCounter');
+    if (!counterElement) return;
+    
+    // Increment by random amount between 1-3 every 2-5 seconds
+    const increment = Math.floor(Math.random() * 3) + 1;
+    signupCount += increment;
+    
+    // Animate the number change
+    counterElement.style.transform = 'scale(1.2)';
+    counterElement.style.color = '#27AE60';
+    
+    setTimeout(() => {
+        counterElement.textContent = formatNumber(signupCount);
+        counterElement.style.transform = 'scale(1)';
+        counterElement.style.color = '#2c3e50';
+    }, 200);
+}
+
+function startSignupCounter() {
+    const counterElement = document.getElementById('signupCounter');
+    if (counterElement) {
+        counterElement.textContent = formatNumber(signupCount);
+    }
+    
+    // Increment at random intervals (every 2-5 seconds)
+    function scheduleNextIncrement() {
+        const delay = Math.random() * 3000 + 2000; // 2-5 seconds
+        setTimeout(() => {
+            incrementSignupCounter();
+            scheduleNextIncrement();
+        }, delay);
+    }
+    
+    scheduleNextIncrement();
+}
+
+// Start counter when page loads
+document.addEventListener('DOMContentLoaded', () => {
+    startSignupCounter();
+});
+
 // Smooth scrolling for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
