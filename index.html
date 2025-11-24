@@ -13,6 +13,23 @@
         <div class="waves"></div>
     </div>
 
+    <!-- Thunderstorm Elements -->
+    <div class="thunderstorm-overlay" id="thunderstormOverlay">
+        <div class="storm-clouds">
+            <div class="cloud cloud-1"></div>
+            <div class="cloud cloud-2"></div>
+            <div class="cloud cloud-3"></div>
+            <div class="cloud cloud-4"></div>
+        </div>
+        <div class="rain-container" id="rainContainer"></div>
+        <div class="lightning" id="lightning"></div>
+        <div class="storm-waves">
+            <div class="storm-wave wave-1"></div>
+            <div class="storm-wave wave-2"></div>
+            <div class="storm-wave wave-3"></div>
+        </div>
+    </div>
+
     <header>
         <nav>
             <div class="logo">⚓ Hampton's Yacht</div>
@@ -33,7 +50,16 @@
                     <div class="yacht-mast"></div>
                     <div class="yacht-sail"></div>
                     <div class="hampton">
-                        <div class="egg-head"></div>
+                        <div class="egg-head" id="eggHead">
+                            <div class="crack-line crack-1"></div>
+                            <div class="crack-line crack-2"></div>
+                            <div class="crack-line crack-3"></div>
+                            <div class="egg-pieces">
+                                <div class="egg-piece piece-1"></div>
+                                <div class="egg-piece piece-2"></div>
+                                <div class="egg-piece piece-3"></div>
+                            </div>
+                        </div>
                         <div class="body"></div>
                         <div class="arm arm-left"></div>
                         <div class="arm arm-right"></div>
@@ -42,7 +68,10 @@
             </div>
             <h1 class="hero-title">Welcome Aboard</h1>
             <p class="hero-subtitle">Experience luxury sailing with Hampton and his magnificent yacht</p>
-            <button class="cta-button" onclick="sailAway()">Set Sail</button>
+            <div class="button-group">
+                <button class="cta-button" onclick="sailAway()">Set Sail</button>
+                <button class="storm-button" onclick="startThunderstorm()">⚡ Weather the Storm</button>
+            </div>
         </section>
 
         <section id="about" class="about">
